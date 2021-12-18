@@ -7,7 +7,7 @@ https://aaryavart.herokuapp.com/
 
 * Must have NodeJS and NPM installed (https://nodejs.org/en/)
 * Install VS Code https://code.visualstudio.com/download
-* Clone the project using `git clone https://github.com/Aaryavart/external_web.git`
+* Clone the project using `https://github.com/Aaryavart/baseCode.git`
 * Install dependencies by running `npm install`
 * npm start
 

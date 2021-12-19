@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+section{
+  margin: 2em 0;
+}
+
+.container{
+  max-width: 1278px;
+  margin: 0 auto;
+}
+
+.contacts-header{
+  text-align: center;
+}
+
+.contact-cards {
+    width: 100%;
+  }
+.contact-cards .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0.5em auto;
+  }
+  
+  .contact-cards .card {
+    padding: 0.5em;
+    width: 350px;
+    margin: 0.5em 0;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(240, 240, 240);
+    background: rgba(250,250,250);
+    border-radius: 5px;
+    transition: all .5s ease;
+  }
+
+  .contact-cards .card:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+  .card a{
+    text-decoration: none;
+  }
+  
+  .contact-cards .card > *:not(last-child) {
+    margin-bottom: 0.5em;
+  }
+  
+  .contact-cards .whatsapp {
+    color: rgb(4, 179, 4);
+  }
+  .contact-cards .home {
+    color: rgb(16, 133, 250);
+  }
+  .contact-cards .email {
+    color: #d41333;
+  }
+  
+/* form */
+.contact-form .container{
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid magenta; */
+  justify-content: space-between;
+  background-color: rgb(240, 240, 240);
+}
+.form{
+  width: 50%;
+  padding: 1em;
+}
+
+form > * {
+  padding: .85em;
+  display: inline-block;
+  width: 100%;
+  margin: 0.5em 0;
+  border: 2px solid rgb(228, 228, 228);
+  outline: none;
+  border-radius: 5px;
+}
+
+textarea:focus, input:focus, select:focus{
+  border: 2px solid rgb(107, 181, 255);
+}
+
+form textarea{
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 1em;
+}
+
+.btn-primary{
+  background: dodgerblue;
+  color: white;
+  border-radius: 5px;
+}
+.btn-primary:hover{
+  background: rgb(30, 128, 255);
+}
+
+.map{
+  height: auto;
+}
+
+@media(max-width: 1220px) {
+  .form, .map{
+    width: 100%;
+  }
+  .map{
+    height: 300px;
+  }
+}

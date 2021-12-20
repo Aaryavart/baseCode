@@ -1,11 +1,11 @@
 const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
+const cors = require('cors')
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const expressLayouts = require("express-ejs-layouts");
 const db = require("./config/mongoose");
-
 /*
 var indexRouter = require('./routes/index');
 var aboutRouter = require('./routes/about');
@@ -14,9 +14,11 @@ var galleryRouter = require('./routes/gallery');
 */
 
 const app = express();
+app.use(cors())
 
 // url encoding
 app.use(express.urlencoded({ extended: false }));
+
 
 // logger and json
 app.use(logger("dev"));

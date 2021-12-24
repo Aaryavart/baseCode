@@ -1,7 +1,7 @@
 # Aaryavart is website for children with special needs 
 
 Live Deployment: 
-https://aaryavart.herokuapp.com/
+https://aaryavart-stage.herokuapp.com/
 
 ## Setup
 
